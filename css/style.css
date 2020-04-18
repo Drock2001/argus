@@ -1,0 +1,431 @@
+html,
+body,
+section,
+div,
+h1 {
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.background-wrap{
+  position: fixed;
+  z-index: -1000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top:0;
+  left: 0;
+}
+
+#video-bg-elem{
+  position: absolute;
+  opacity: 100%;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+header {
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    color: #000000;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2px;
+    z-index: 99;
+    transition: background-color 0.5s ease-out;
+}
+
+header ul a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    visibility: hidden;
+    transition: background-color 0.5s ease-out;
+}
+
+.logo{
+  text-align: center;
+  opacity: 100%;
+  transition: background-color 0.5s ease-out;
+}
+
+header ul a:hover{
+  color: #2196f3;
+  background-color: #367588;
+  box-shadow: 0 0 10px #367588, 0 0 40px #367588;
+}
+
+:hover {
+    color: #000000;
+    text-shadow: 0 0 7px #367588;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+section {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0;
+    height: 100%;
+    position: relative;
+
+}
+
+.home {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    transition: background-color 0.5s ease-out;
+}
+
+.home h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 20px #367588;
+    visibility: hidden;
+    align-self: center;
+}
+
+.home h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px 0 5px;
+    display: inline-block;
+    letter-spacing: 4;
+    visibility: hidden;
+}
+
+.resume{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resume .mybtn {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #36758840;
+    border: 1px solid #36758880;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 35px;
+    z-index: 999;
+}
+
+.resume .mybtn:hover{
+  color: #2196f3;
+  background-color: #367588;
+  box-shadow: 0 0 10px #367588, 0 0 40px #367588, 0 0 80px #367588;
+  transition-delay: 0.2s;
+}
+
+.section-title {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+.section-title h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    font-size: 28px;
+    color: #000000;
+    text-shadow: 0 0 20px #2196f3;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+}
+
+.section-info {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    color: #000000;
+    text-align: center;
+}
+
+.section-info p {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 28px;
+    color: #000000;
+    font-size: 24px;
+}
+
+.section-info li{
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 28px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.section-info li:hover{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
+
+.section-info .mybtn {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #36758840;
+    border: 1px solid #36758880;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+.section-info .mybtn:hover{
+  color: #2196f3;
+  background-color: #367588;
+  box-shadow: 0 0 10px #367588, 0 0 40px #367588, 0 0 80px #367588;
+  transition-delay: 0.2s;
+}
+
+.footer{
+  text-align: center;
+}
+.footer .link {
+  text-align: center;
+  word-spacing: 20px;
+}
+.footer .link img:hover{
+  color: #2196f3;
+  background-color: #367588;
+  height: 30px;
+  box-shadow: 0 0 10px #367588, 0 0 40px #367588, 0 0 80px #367588;
+  transition-delay: 0.2s;
+}
+
+footer{
+  color: #fff;
+}
+
+.mynav {
+    background-color: #36758860;
+}
+
+.container
+{
+	position: relative;
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.container .box
+{
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container .box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(400px at center 100px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.container .box .imgBx img{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 400px;
+}
+
+
+.container .box:hover .imgBx
+{
+	clip-path: circle(80px at center 100px);
+	transition-delay: 0s;
+}
+.container .box:hover .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container .box .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.container .box .content h2
+{
+	margin: 0;
+	padding: 0;
+}
+.container .box .content a
+{
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+}
+.container .box .content h2,
+.container .box .content p,
+.container .box .content a
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.container .box:hover .content h2
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.5s;
+  font-size: 20px;
+}
+.container .box:hover .content p
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.7s;
+  font-size: 16px;
+}
+.container .box:hover .content a
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.9s;
+
+   font-family: 'Josefin Sans', sans-serif;
+   display: inline-block;
+   padding: 5px 10px;
+   background-color: #36758840;
+   border: 1px solid #36758880;
+   border-radius: 20px;
+   color: #fff;
+   font-size: 16px;
+   text-transform: uppercase;
+   text-decoration: none;
+   margin-top: 15px;
+   z-index: 999;
+}
+
+.container .box:hover .content a:hover{
+  color: #2196f3;
+  background-color: #367588;
+  box-shadow: 0 0 10px #367588, 0 0 40px #367588, 0 0 80px #367588;
+  transition-delay: 0.2s;
+}
+
+@media (max-width: 750px) {
+  .section-info {
+      font-family: 'Josefin Sans', sans-serif;
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px 0;
+      color: #000000;
+      text-align: center;
+  }
+
+  header {
+      font-family: 'Josefin Sans', sans-serif;
+      position: absolute;
+      color: #000000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 2px;
+      z-index: 99;
+      transition: background-color 0.5s ease-out;
+  }
+
+  header ul a {
+      font-family: 'Josefin Sans', sans-serif;
+      color: #000000;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      visibility: hidden;
+      transition: background-color 0.5s ease-out;
+  }
+
+  .section-info p {
+      font-family: 'Josefin Sans', sans-serif;
+      line-height: 28px;
+      color: #000000;
+      font-size: 16px;
+  }
+
+  .section-info li{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 28px;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .table td, .table th {
+    padding: 2px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .container .box
+  {
+  	position: relative;
+  	width: 140px;
+  	height: 200px;
+  	margin: 20px 0;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  }
+
+  .container .box .imgBx img{
+    position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 140px;
+  	height: 200px;
+  }
+}
