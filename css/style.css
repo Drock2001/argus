@@ -7,11 +7,40 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body{
-  background-image: url('img/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.upload{
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.vid{
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+input[type="file"]{
+  display:none;
+}
+
+label{
+  font-family: 'Josefin Sans', sans-serif;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #36758840;
+  border: 1px solid #36758880;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 35px;
+  z-index: 999;
+}
+
+label:hover{
+  color: #2196f3;
+  background-color: #367588;
+  box-shadow: 0 0 10px #367588, 0 0 40px #367588, 0 0 80px #367588;
+  transition-delay: 0.2s;
 }
 
 .background-wrap {
@@ -38,7 +67,7 @@ header {
     left: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
     z-index: 99;
     transition: background-color 0.5s ease-out;
 }
