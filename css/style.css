@@ -77,7 +77,7 @@ header ul a:hover{
 
 section {
     font-family: 'Josefin Sans', sans-serif;
-    padding: 20px 0;
+    padding: 30px 0;
     height: 100%;
     position: relative;
 
@@ -88,7 +88,7 @@ section {
     color: #000000;
     padding: 0;
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
     text-align: center;
     justify-content: center;
     transition: background-color 0.5s ease-out;
@@ -427,5 +427,94 @@ footer{
   	left: 0;
   	width: 140px;
   	height: 200px;
+  }
+
+  .container .box:hover .imgBx
+  {
+  	clip-path: circle(40px at center 50px);
+  	transition-delay: 0s;
+  }
+  .container .box:hover .imgBx img
+  {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  }
+  .container .box .content
+  {
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	height: 55%;
+  	padding: 10px;
+  	box-sizing: border-box;
+  	text-align: center;
+  }
+  .container .box .content h2
+  {
+  	margin: 0;
+  	padding: 0;
+  }
+  .container .box .content a
+  {
+  	text-decoration: none;
+  	background: #000;
+  	color: #fff;
+  	padding: 5px;
+  	display: inline-block;
+  }
+  .container .box .content h2,
+  .container .box .content p,
+  .container .box .content a
+  {
+  	opacity: 0;
+  	transition: 0.5s;
+  	transform: translateY(10px);
+
+  }
+  .container .box:hover .content h2
+  {
+  	opacity: 1;
+  	transform: translateY(0px);
+  	transition-delay: 0.5s;
+    font-size: 10px;
+  }
+  .container .box:hover .content p
+  {
+  	opacity: 1;
+  	transform: translateY(0px);
+  	transition-delay: 0.7s;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .container .box:hover .content a
+  {
+  	opacity: 1;
+  	transform: translateY(0px);
+  	transition-delay: 0.9s;
+
+     font-family: 'Josefin Sans', sans-serif;
+     display: inline-block;
+     padding: 2.5px 5px;
+     background-color: #36758840;
+     border: 1px solid #36758880;
+     border-radius: 10px;
+     color: #fff;
+     font-size: 8px;
+     text-transform: uppercase;
+     text-decoration: none;
+     margin-top: 7.5px;
+     z-index: 999;
+  }
+
+  .container .box:hover .content a:hover{
+    color: #2196f3;
+    background-color: #367588;
+    box-shadow: 0 0 10px #367588, 0 0 40px #367588, 0 0 80px #367588;
+    transition-delay: 0.2s;
   }
 }
