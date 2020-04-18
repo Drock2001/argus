@@ -7,25 +7,27 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.background-wrap{
+body{
+  background-image: url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background-wrap {
   position: fixed;
   z-index: -1000;
   width: 100%;
   height: 100%;
+  background-size: cover;
   overflow: hidden;
   top:0;
   left: 0;
 }
 
-#video-bg-elem{
-  position: absolute;
-  opacity: 100%;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+.background-wrap img{
+  background-size: 100%;
 }
-
 
 header {
     font-family: 'Josefin Sans', sans-serif;
@@ -105,7 +107,7 @@ section {
 
 .home h3 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding: 10px 20px;
     margin: 5px 0 5px;
